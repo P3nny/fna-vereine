@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+    <head></head>
+    <body>
+        <h1>Vereine in Moers</h1>
+        <table border=1 cellpadding=7>
+            <tr>
+                <th>Name</th>
+                <th>Kategorie</th>
+                <th>URL</th
+            </tr>
+            {% for obj in object_list %}
+            <tr>
+                <td><a href="{{ obj.id }}/">{{ obj.name }}</a></td>
+                <td>{{ obj.cat2 }}</td>
+                <td>{{ obj.url }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
