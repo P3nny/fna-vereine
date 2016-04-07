@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    </head>
+    <body>
+        <div id="map" style="width:100%; height:300px;"></div>
+        <h1>Männer-Gesang-Verein -Frohsinn- 1875-1905 e.V. Moers</h1>
+        <p> Angebot: <br>
+        Chor und Musik</p>
+        <p> URL: <br>
+        <a href="http://m.moers.de/www/verzeichnis-01.nsf/apijson.xsp/doc/14E281A6881667C3C125724900488C48"> Männer-Gesang-Verein -Frohsinn- 1875-1905 e.V. Moers</a>
+    </body>
+</html>
+        </h1>
+        <script type="text/javascript">
+            var map = L.map('map').setView([51.4369627, 6.5432531], 16);
+            var mapquestLayer = new L.TileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: 'Data, imagery and map information provided by <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>,<a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.',
+                subdomains: ['otile1','otile2','otile3','otile4']
+            });
+            map.addLayer(mapquestLayer);
+            var marker = L.marker([51.4369627, 6.5432531]).addTo(map);
+        </script>
+    </body>
+</html>
